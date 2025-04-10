@@ -1,0 +1,69 @@
+/* Element selector */
+p {
+  color: #444;
+}
+
+/* Class selector */
+.box {
+  background-color: lightblue;
+  padding: 10px;
+}
+
+/* ID selector */
+#unique {
+  background-color: lightgreen;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* Grouped selectors */
+h2,
+h3 {
+  color: darkred;
+}
+
+/* Descendant selector */
+.parent p {
+  color: navy;
+}
+
+/* Child selector */
+.parent > span {
+  color: darkorange;
+  font-style: italic;
+}
+
+/* Adjacent sibling selector */
+.siblings p + p {
+  color: purple;
+  font-weight: bold;
+}
+
+/* General sibling selector */
+.siblings p ~ div {
+  background-color: #eee;
+  padding: 5px;
+}
+
+/* Attribute selector */
+input[type="text"] {
+  border: 2px solid #000;
+  padding: 5px;
+}
+
+/* Pseudo-class */
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/* Pseudo-elements */
+.pseudo::before {
+  content: "→ ";
+  color: rgb(55, 0, 255);
+}
+
+.pseudo::after {
+  content: "Hi";
+  color: rgb(255, 0, 0);
+}

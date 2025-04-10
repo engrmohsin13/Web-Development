@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+header {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+/* Content Section */
+.content {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  padding: 20px;
+  width: 30%;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+
+/* Pseudo-element styles */
+.card::before {
+  content: "New!";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.card::after {
+  content: "Read more...";
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2ecc71;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* Pseudo-class styles */
+.card-title:hover {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+.card-description:focus {
+  background-color: #ecf0f1;
+  outline: none;
+}
+
+.card:nth-child(odd) {
+  background-color: #f4f4f4;
+}
+
+.card:nth-child(even) {
+  background-color: #ecf0f1;
+}
+
+.card:active {
+  transform: scale(0.98);
+  transition: transform 0.1s ease;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

@@ -1,0 +1,59 @@
+/* General Body and Header Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* Grid Container Styling */
+.grid-container {
+  display: grid; /* Enables CSS Grid */
+  grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+  grid-template-rows: auto; /* Set row height to auto */
+  gap: 20px; /* Space between grid items */
+  padding: 20px;
+}
+
+/* Grid Item Styling */
+.grid-item {
+  background-color: #e74c3c;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Grid Item Hover Effect */
+.grid-item:hover {
+  background-color: orange;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="./stylesheets/Selectors.css" />
+  </head>
+  <body>
+    <h1>CSS Selectors</h1>
+
+    <p>This is an element selector (p).</p>
+
+    <div class="box">This uses a class selector (.box).</div>
+
+    <div id="unique">This uses an ID selector (#unique).</div>
+
+    <h2>Grouped Selectors</h2>
+    <h3>Heading 3</h3>
+
+    <div class="parent">
+      <p>This is inside .parent - descendant selector</p>
+      <span>This is a child selector example</span>
+    </div>
+
+    <div class="siblings">
+      <p>Paragraph 1</p>
+      <p>Paragraph 2</p>
+      <div>Div sibling</div>
+    </div>
+
+    <input type="text" placeholder="Attribute selector" />
+    <a href="#">Hover over me (pseudo-class)</a>
+
+    <p class="pseudo">This paragraph has ::before and ::after.</p>
+  </body>
+</html>

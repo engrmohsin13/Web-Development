@@ -1,0 +1,117 @@
+/* General Body and Header Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* Container to hold all the positioned elements */
+.container {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  height: 400px; /* To show the effect of positioning */
+  position: relative; /* For absolute positioning to be based on this container */
+  box-sizing: border-box;
+}
+
+/* Static Positioning - default positioning */
+.static-box {
+  background-color: #f39c12;
+  color: white;
+  padding: 15px;
+  margin: 10px 0;
+  text-align: center;
+  border: 2px solid #e67e22;
+  font-weight: bold;
+  position: static; /* Static is the default value, and it doesn't affect positioning */
+}
+
+/* Relative Positioning - position relative to its normal position */
+.relative-box {
+  background-color: #2ecc71;
+  color: white;
+  padding: 15px;
+  margin: 10px 0;
+  text-align: center;
+  border: 2px solid #27ae60;
+  font-weight: bold;
+  position: relative;
+  top: 20px; /* Moves the box 20px down from its original position */
+  left: 20px; /* Moves the box 20px right from its original position */
+}
+
+/* Absolute Positioning - position relative to the nearest positioned ancestor */
+.absolute-box {
+  background-color: #e74c3c;
+  color: white;
+  padding: 15px;
+  margin: 10px 0;
+  text-align: center;
+  border: 2px solid #c0392b;
+  font-weight: bold;
+  position: absolute;
+  top: 50px; /* Positions it 50px from the top of the nearest positioned ancestor */
+  right: 20px; /* Positions it 20px from the right of the nearest positioned ancestor */
+}
+
+/* Fixed Positioning - stays fixed to the viewport even when scrolling */
+.fixed-box {
+  background-color: #8e44ad;
+  color: white;
+  padding: 15px;
+  margin: 10px 0;
+  text-align: center;
+  border: 2px solid #9b59b6;
+  font-weight: bold;
+  position: fixed;
+  bottom: 10px; /* Positions it 10px from the bottom of the viewport */
+  left: 50%; /* Centers it horizontally */
+  transform: translateX(
+    -50%
+  ); /* Offsets it by 50% of its width to perfectly center */
+}
+
+/* Sticky Positioning - switches between relative and fixed based on the scroll position */
+.sticky-box {
+  background-color: #1abc9c;
+  color: white;
+  padding: 15px;
+  margin: 10px 0;
+  text-align: center;
+  border: 2px solid #16a085;
+  font-weight: bold;
+  position: sticky;
+  top: 0; /* Sticks it to the top when scrolling */
+  z-index: 10; /* Ensures it stays above other elements */
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

@@ -1,0 +1,86 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* --- Color Boxes --- */
+.color-examples {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.color-box {
+  width: 200px;
+  height: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.hex {
+  background-color: #3498db;
+}
+
+.rgb {
+  background-color: rgb(231, 76, 60);
+}
+
+.rgba {
+  background-color: rgba(46, 204, 113, 0.7);
+  color: #000;
+}
+
+.hsl {
+  background-color: hsl(48, 100%, 67%);
+  color: #000;
+}
+
+/* --- Background Examples --- */
+.bg-examples {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.bg-box {
+  width: 200px;
+  height: 120px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.bg-color {
+  background-color: #8e44ad;
+}
+
+.bg-image {
+  background-image: url("https://images.unsplash.com/photo-1562016600-ece13e8ba570?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}

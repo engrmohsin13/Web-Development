@@ -1,0 +1,81 @@
+/* Define CSS Variables at the root level */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-family: 'Arial', sans-serif;
+    --font-size: 16px;
+    --card-bg: #ecf0f1;
+    --card-padding: 20px;
+    --card-border-radius: 10px;
+    --transition-duration: 0.3s;
+  }
+  
+  /* General body styles */
+  body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+  }
+  
+  header p {
+    font-size: 1.2em;
+  }
+  
+  /* Content Section Styles */
+  .content {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: var(--card-bg);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: left;
+    transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+  }
+  
+  .card h2 {
+    color: var(--primary-color);
+    font-size: 1.5em;
+  }
+  
+  .card p {
+    color: #333;
+    font-size: 1em;
+  }
+  
+  /* Hover effect on cards */
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  

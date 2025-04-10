@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.box-model {
+  width: 300px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 5px solid #007bff;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Visually show padding, border, margin */
+.box-model {
+  margin: 30px auto; /* Margin: Space outside border */
+  padding: 20px; /* Padding: Space inside border */
+  border: 5px solid #007bff; /* Border */
+  background-color: #ffffff;
+}
+
+.info {
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}

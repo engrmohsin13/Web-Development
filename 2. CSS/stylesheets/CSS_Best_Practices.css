@@ -1,0 +1,157 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Variables for reusability */
+  :root {
+    --primary-color: #333;
+    --secondary-color: #f4f4f4;
+    --accent-color: #f39c12;
+    --font-family: 'Arial', sans-serif;
+    --font-size-base: 16px;
+    --font-size-large: 18px;
+    --font-size-xlarge: 2rem;
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 30px;
+  }
+  
+  /* Reusable Classes */
+  .section-padding {
+    padding: var(--spacing-medium);
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .bg-primary {
+    background-color: var(--primary-color);
+  }
+  
+  .text-primary {
+    color: var(--primary-color);
+  }
+  
+  .text-accent {
+    color: var(--accent-color);
+  }
+  
+  .font-base {
+    font-family: var(--font-family);
+  }
+  
+  .font-size-base {
+    font-size: var(--font-size-base);
+  }
+  
+  .font-size-large {
+    font-size: var(--font-size-large);
+  }
+  
+  .font-size-xlarge {
+    font-size: var(--font-size-xlarge);
+  }
+  
+  .margin-bottom-medium {
+    margin-bottom: var(--spacing-medium);
+  }
+  
+  /* Header Section */
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--spacing-small) 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: var(--font-size-xlarge);
+    margin-bottom: var(--spacing-small);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: var(--font-size-base);
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Section Styles */
+  section {
+    background-color: white;
+    padding: var(--spacing-medium);
+    margin: var(--spacing-small) 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h2 {
+    font-size: var(--font-size-large);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-small);
+  }
+  
+  section p {
+    font-size: var(--font-size-base);
+    color: #666;
+  }
+  
+  /* Footer Styles */
+  footer {
+    text-align: center;
+    margin-top: var(--spacing-large);
+    padding: var(--spacing-small);
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  footer p {
+    font-size: var(--font-size-base);
+  }
+  
+  /* Utility Classes for Typography */
+  .title {
+    font-size: var(--font-size-xlarge);
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    font-size: var(--font-size-large);
+    font-weight: bold;
+  }
+  
+  .paragraph {
+    font-size: var(--font-size-base);
+  }
+  
+  /* Flexbox Class */
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* DRY Example: Reusable Margin Class */
+  .margin-bottom-small {
+    margin-bottom: var(--spacing-small);
+  }
+  
+  

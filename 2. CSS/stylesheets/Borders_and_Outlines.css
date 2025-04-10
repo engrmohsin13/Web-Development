@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.box {
+  padding: 20px;
+  margin: 20px auto;
+  width: 300px;
+  text-align: center;
+  background-color: #fff;
+  font-weight: bold;
+}
+
+/* Border Example */
+.border-example {
+  border: 3px solid #007bff;
+}
+
+/* Border Radius Example */
+.border-radius-example {
+  border: 3px solid #28a745;
+  border-radius: 15px;
+}
+
+/* Outline Example */
+.outline-example {
+  outline: 3px dashed #dc3545;
+  outline-offset: 5px;
+}
+
+/* Border + Outline */
+.border-outline-example {
+  border: 2px solid #6f42c1;
+  outline: 3px dotted #ffc107;
+  outline-offset: 8px;
+}

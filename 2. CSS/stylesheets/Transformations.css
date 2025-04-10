@@ -1,0 +1,82 @@
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* Transformation Section Styles */
+.transformation-section {
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.transformation-section h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.transform-box {
+  margin: 20px;
+  padding: 40px;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1.5em;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+/* Transformation 1: Rotate */
+.rotate:hover {
+  transform: rotate(45deg);
+}
+
+/* Transformation 2: Scale */
+.scale:hover {
+  transform: scale(1.5);
+}
+
+/* Transformation 3: Translate */
+.translate:hover {
+  transform: translate(100px, 50px);
+}
+
+/* Transformation 4: Skew */
+.skew:hover {
+  transform: skewX(20deg) skewY(10deg);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

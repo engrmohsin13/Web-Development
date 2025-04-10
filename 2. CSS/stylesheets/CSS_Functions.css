@@ -1,0 +1,56 @@
+/* Apply a basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styling for the container */
+  .container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-around;
+  }
+  
+  /* Common box styling */
+  .box {
+    padding: 20px;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* box-1 using calc() */
+  .box-1 {
+    width: calc(50% - 40px); /* 50% of the container width minus padding */
+    height: calc(200px + 10vw); /* 200px plus 10% of the viewport width */
+  }
+  
+  /* box-2 using min() */
+  .box-2 {
+    width: min(300px, 50%); /* Width will be the smaller value between 300px and 50% of the container */
+    height: 200px;
+  }
+  
+  /* box-3 using max() */
+  .box-3 {
+    width: max(200px, 30%); /* Width will be the larger value between 200px and 30% of the container */
+    height: 200px;
+  }
+  
+  /* box-4 using clamp() */
+  .box-4 {
+    width: clamp(200px, 50%, 400px); /* Width will be between 200px and 400px, but will be 50% of the container size */
+    height: 200px;
+  }
+  
+  /* Adding hover effect */
+  .box:hover {
+    transform: scale(1.1); /* Slightly enlarge the box on hover */
+  }
+  

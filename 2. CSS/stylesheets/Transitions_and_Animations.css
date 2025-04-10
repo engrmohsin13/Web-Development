@@ -1,0 +1,165 @@
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* Transition Section Styles */
+.transition-section {
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.transition-section h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.transition-box,
+.transition-width,
+.transition-transform {
+  margin: 20px;
+  padding: 20px;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1.2em;
+  transition: all 0.5s ease;
+}
+
+/* Transition 1: Color Change */
+.transition-box:hover {
+  background-color: #ff6347;
+}
+
+/* Transition 2: Width Change */
+.transition-width {
+  width: 200px;
+  transition: width 0.5s ease;
+}
+
+.transition-width:hover {
+  width: 400px;
+}
+
+/* Transition 3: Rotate and Scale */
+.transition-transform {
+  transition: transform 0.5s ease;
+}
+
+.transition-transform:hover {
+  transform: rotate(45deg) scale(1.2);
+}
+
+/* Animation Section Styles */
+.animation-section {
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.animation-section h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.bounce,
+.fade-in,
+.slide-in {
+  padding: 20px;
+  background-color: #008cba;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1.2em;
+  margin: 20px;
+}
+
+/* Animation 1: Bounce Effect */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounce {
+  animation: bounce 1s ease infinite;
+}
+
+/* Animation 2: Fade In */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-out;
+}
+
+/* Animation 3: Slide In */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 1s ease-out;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

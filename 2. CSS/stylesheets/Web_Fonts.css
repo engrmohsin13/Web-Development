@@ -1,0 +1,113 @@
+/* Default System Font */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&family=Playfair+Display:wght@400;700&family=Raleway:wght@400;700&family=Ubuntu:wght@400;700&family=Quicksand:wght@400;700&family=Inter:wght@400;700&family=Oswald:wght@400;700&display=swap');
+  
+  /* Google Font - Roboto */
+  .font-1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  /* Google Font - Lora */
+  .font-2 {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  /* Google Font - Montserrat */
+  .font-3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  /* Google Font - Open Sans */
+  .font-4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  /* Google Font - Poppins */
+  .font-5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  /* Custom Font - CustomFont1 */
+  @font-face {
+    font-family: 'CustomFont1';
+    src: url('https://example.com/fonts/custom-font1.woff2') format('woff2'),
+         url('https://example.com/fonts/custom-font1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .font-6 {
+    font-family: 'CustomFont1', sans-serif;
+    font-size: 18px;
+  }
+  
+  /* Custom Font - CustomFont2 */
+  @font-face {
+    font-family: 'CustomFont2';
+    src: url('https://example.com/fonts/custom-font2.woff2') format('woff2'),
+         url('https://example.com/fonts/custom-font2.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .font-7 {
+    font-family: 'CustomFont2', sans-serif;
+    font-size: 18px;
+  }
+  
+  /* Google Font - Playfair Display */
+  .font-8 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  /* Google Font - Raleway */
+  .font-9 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  /* Google Font - Ubuntu */
+  .font-10 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  /* Google Font - Quicksand */
+  .font-11 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  /* Google Font - Inter */
+  .font-12 {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  /* Google Font - Oswald */
+  .font-13 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
