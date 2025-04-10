@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>📝 Registration Form</h1>
+
+    <form>
+      <!-- Personal Details -->
+      <fieldset>
+        <legend>👤 Personal Information</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          placeholder="John Doe"
+          required
+        /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="6"
+          required
+        /><br /><br />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" /><br /><br />
+
+        <label for="age">Age:</label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          min="1"
+          max="120"
+        /><br /><br />
+
+        <label for="gender">Gender:</label><br />
+        <input type="radio" id="male" name="gender" value="male" checked />
+        <label for="male">Male</label><br />
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br />
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label><br /><br />
+      </fieldset>
+
+      <!-- Contact Preferences -->
+      <fieldset>
+        <legend>📞 Contact Preferences</legend>
+
+        <label for="contact">Preferred Contact Method:</label><br />
+        <input
+          type="checkbox"
+          id="emailContact"
+          name="contactMethod"
+          value="email"
+        />
+        <label for="emailContact">Email</label><br />
+        <input
+          type="checkbox"
+          id="phoneContact"
+          name="contactMethod"
+          value="phone"
+        />
+        <label for="phoneContact">Phone</label><br /><br />
+
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{10}"
+          placeholder="1234567890"
+        /><br /><br />
+
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website" /><br /><br />
+      </fieldset>
+
+      <!-- Preferences -->
+      <fieldset>
+        <legend>🎯 Preferences</legend>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">--Select--</option>
+          <option value="pk">Pakistan</option>
+          <option value="us">USA</option>
+          <option value="uk">UK</option></select
+        ><br /><br />
+
+        <label for="bio">Short Bio:</label><br />
+        <textarea
+          id="bio"
+          name="bio"
+          rows="4"
+          cols="40"
+          placeholder="Tell us about yourself..."
+        ></textarea
+        ><br /><br />
+
+        <label for="resume">Upload Resume:</label>
+        <input
+          type="file"
+          id="resume"
+          name="resume"
+          accept=".pdf,.docx"
+        /><br /><br />
+      </fieldset>
+
+      <!-- Submission -->
+      <input type="hidden" name="formType" value="registration" />
+      <input type="reset" value="Reset Form" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
