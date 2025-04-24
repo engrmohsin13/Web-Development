@@ -1,0 +1,93 @@
+
+/* Card */
+.card {
+  justify-self: center;
+  align-self: center;
+  width: 280px; /* Set a fixed width */
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: "Arial", sans-serif;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  -webkit-transition: transform 0.5s ease, box-shadow 0.3s ease;
+  -moz-transition: transform 0.5s ease, box-shadow 0.3s ease;
+  -ms-transition: transform 0.5s ease, box-shadow 0.3s ease;
+  -o-transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+}
+
+/* Upper area with image */
+.upperArea {
+  width: 100%;
+  height: 200px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upperArea img {
+  width: 60%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.upperArea img:hover {
+  width: 100%;
+  transform: translateY(50px);
+}
+
+/* Lower area with text and button */
+.lowerArea {
+  padding: 20px;
+  text-align: center;
+}
+
+/* User name and role */
+.textArea h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.textArea h3 {
+  font-size: 1.1rem;
+  color: #777;
+  margin: 5px 0;
+}
+
+/* Description */
+.textArea p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+/* Button area */
+.btnsArea button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btnsArea button:hover {
+  background-color: #45a049;
+}
